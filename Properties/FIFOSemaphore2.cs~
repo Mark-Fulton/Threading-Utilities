@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace Mark.Utilities.MAC
+{
+	public class FifoSemaphore2 :Semaphore
+	{
+		private readonly Semaphore SemaphoreFIFO;
+		private ulong ThreadCount;
+		private ulong ThreadNumber;
+		private readonly object FIFOLock;
+
+		public FifoSemaphore2 (ulong NumberOfTokens): base(NumberOfTokens)
+		{
+			ThreadCount = 0;
+			ThreadNumber = 0;
+			FIFOLock = new object ();
+		}
+
+		public override void AcquireToken ()
+		{
+			ulong ThreadIndNumber;
+			lock (FIFOLock) 
+			{
+				ThreadIndNumber = ThreadCount;
+				ThreadCount++;
+			}
+			lock (FIFOLock) 
+			{
+				while (ThreadIndNumber != ThreadNumber) 
+				{
+					Monitor.Wait (FIFOLock);
+				}
+			}
+			base.AcquireToken ();
+			lock (FIFOLock) 
+			{
+				ThreadNumber++;
+				Monitor.PulseAll (FIFOLock);
+			}
+		}
+	}
+}
+

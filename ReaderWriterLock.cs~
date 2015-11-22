@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace Mark.Utilities.MAC
+{
+	public class ReaderWriter
+	{
+		Mutex ReaderWriterLockMutex;
+		Lightswitch ReaderWriterLockLightswitch;
+
+		public ReaderWriter ()
+		{
+			ReaderWriterLockMutex = new Mutex ();
+			ReaderWriterLockLightswitch = new Lightswitch (ReaderWriterLockMutex);
+		}
+
+		public void ReadLock()
+		{
+			ReaderWriterLockLightswitch.Acquire ();
+		}
+
+		public void ReadRelease()
+		{
+			ReaderWriterLockLightswitch.Release ();
+		}
+
+		public void WriteLock()
+		{
+			ReaderWriterLockMutex.AcquireToken ();
+		}
+
+		public void WriteRelease()
+		{
+			ReaderWriterLockMutex.ReleaseToken ();
+		}
+	}
+}
