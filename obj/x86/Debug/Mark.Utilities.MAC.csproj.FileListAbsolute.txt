@@ -1,5 +1,0 @@
-C:\Users\Mark\SkyDrive\Coding\Advanced .Net\Mark.Utilities.MAC\Mark.Utilities.MAC\bin\Debug\Mark.Utilities.MAC.pdb
-C:\Users\Mark\SkyDrive\Coding\Advanced .Net\Mark.Utilities.MAC\Mark.Utilities.MAC\obj\x86\Debug\Mark.Utilities.MAC.csprojResolveAssemblyReference.cache
-C:\Users\Mark\SkyDrive\Coding\Advanced .Net\Mark.Utilities.MAC\Mark.Utilities.MAC\obj\x86\Debug\Mark.Utilities.MAC.pdb
-C:\Users\Mark\SkyDrive\Coding\Advanced .Net\Mark.Utilities.MAC\Mark.Utilities.MAC\bin\Debug\Mark.Utilities.MAC.dll
-C:\Users\Mark\SkyDrive\Coding\Advanced .Net\Mark.Utilities.MAC\Mark.Utilities.MAC\obj\x86\Debug\Mark.Utilities.MAC.dll

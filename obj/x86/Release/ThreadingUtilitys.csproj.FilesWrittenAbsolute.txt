@@ -1,5 +1,0 @@
-/Users/MarkFulton/OneDrive/Coding/Advanced .Net/Mark.Utilities.MAC/Mark.Utilities.MAC/obj/x86/Release/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/Users/MarkFulton/OneDrive/Coding/Advanced .Net/Mark.Utilities.MAC/Mark.Utilities.MAC/bin/Release/Mark.Utilities.MAC.dll.mdb
-/Users/MarkFulton/OneDrive/Coding/Advanced .Net/Mark.Utilities.MAC/Mark.Utilities.MAC/bin/Release/Mark.Utilities.MAC.dll
-/Users/MarkFulton/OneDrive/Coding/Advanced .Net/Mark.Utilities.MAC/Mark.Utilities.MAC/obj/x86/Release/Mark.Utilities.MAC.dll
-/Users/MarkFulton/OneDrive/Coding/Advanced .Net/Mark.Utilities.MAC/Mark.Utilities.MAC/obj/x86/Release/Mark.Utilities.MAC.dll.mdb
